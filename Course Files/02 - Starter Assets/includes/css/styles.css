@@ -38,6 +38,10 @@ Notes:	 Hand coded for Udemy.com
    Carousel
    -------------------------------------- */
 
+#myCarousel .item {
+    height: 400px;
+}
+
 
 
 /* --------------------------------------
