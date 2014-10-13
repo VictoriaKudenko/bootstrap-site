@@ -20,7 +20,15 @@ Notes:	 Hand coded for Udemy.com
    Typography
    -------------------------------------- */
 
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
 
+.well .page-header,
+.well .page-header h1 {
+    margin-top: 0;
+}
 
 /* --------------------------------------
    Navbar
@@ -60,7 +68,6 @@ Notes:	 Hand coded for Udemy.com
 
 .carousel-caption {
     font-size: 24px;
-    font-weight: 100;
 }
 
 .carousel-caption h3 {
@@ -68,12 +75,17 @@ Notes:	 Hand coded for Udemy.com
 }
 
 
-
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
 
+.alert {
+    margin-top: 20px;
+}
 
+.well {
+    margin: 20px 0;
+}
 
 /* --------------------------------------
    Media Queries
@@ -104,7 +116,6 @@ Notes:	 Hand coded for Udemy.com
 
     .carousel-caption {
         font-size: 16px;
-        font-weight: 100;
     }
 
     .carousel-caption h3 {
