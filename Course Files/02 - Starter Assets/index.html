@@ -25,7 +25,6 @@
 	
     <div class="container" id="main">
 
-
         <div class="navbar navbar-fixed-top">
 
             <div class="cotainer">
@@ -44,7 +43,6 @@
                 <div class="nav-collapse collapse navbar-responsive-collapse">
 
                     <ul class="nav navbar-nav">
-
                         <li class="active">
                             <a href="#">Home</a>
                         </li>
@@ -56,7 +54,6 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Web Design</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Web Development</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SEO</a></li>
@@ -64,21 +61,16 @@
                                 <li role="presentation" class="dropdown-header">More Services</li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Content Creation</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Social Media Marketing</a></li>
-
                             </ul><!-- end dropdown-menu -->
-
                         </li>
-
                     </ul><!-- end navbar-nav -->
 
                     <form class="navbar-form pull-left">
-
                         <input type="text" class="form-control" id="searchInput" placeholder="Search this site..."/>
 
                         <button type="submit" class="btn btn-default">
                             <span class="glyphicon glyphicon-search"></span>
                         </button>
-
                     </form><!-- end navbar-form -->
 
                     <ul class="nav navbar-nav pull-right">
@@ -90,13 +82,11 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a></li>
                                 <li role="presentation" class="divider"></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
-
                             </ul><!-- end dropdown-menu -->
                         </li>
                     </ul> <!-- end nav pull-right -->
@@ -108,12 +98,82 @@
         </div> <!-- end navbar -->
 
 
-        <div class="carousel slide" id="myCaurousel">
+        <div class="carousel slide" id="myCarousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active" id="slide1">
+                    <div class="carousel-caption">
+                        <h3>First heading</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis nisl neque. Cras nec orci
+                            dolor. Phasellus maximus purus nec nibh iaculis vestibulum. </p>
+                    </div><!-- end carousel-caption -->
+                </div><!-- end item -->
+                <div class="item" id="slide2">
+                    <div class="carousel-caption">
+                        <h3>Second heading</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis nisl neque. Cras nec orci
+                            dolor. Phasellus maximus purus nec nibh iaculis vestibulum.</p>
+                    </div><!-- end carousel-caption -->
+                </div><!-- end item -->
+                <div class="item" id="slide3">
+                    <div class="carousel-caption">
+                        <h3>Third heading</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis nisl neque. Cras nec orci
+                            dolor. Phasellus maximus purus nec nibh iaculis vestibulum.</p>
+                    </div><!-- end carousel-caption -->
+                </div><!-- end item -->
+            </div><!-- end carousel-inner -->
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
 
         </div> <!-- end myCarousel -->
 
 
         <div class="row" id="bigCallout">
+
+            <div class="col-12">
+
+                <div class="alert alert-success alert-block fade in" role="alert" id="successAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4>Success!</h4>
+                    <p>You just made this element display by using JQuery!
+                       Click the "x" in the right top corner to close
+                       this message!
+                    </p>
+                </div><!-- end alert -->
+
+                <!-- Visible only on small devices -->
+                <div class="well well-small visible-sm">
+                    <a href="" class="btn btn-large btn-block btn-default">
+                        <span class="glyphicon glyphicon-phone"> Give us a call!</span>
+                    </a>
+                </div><!-- end well-small -->
+
+                <div class="well">
+                    <div class="page-header">
+                        <h1>Main Heading <small>Secondary text is right here!</small></h1>
+                    </div><!-- end page-header -->
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis nisl neque. Cras nec orci
+                        dolor.</p>
+                    <a href="" class="btn btn-large btn-primary">Click this nice button</a>
+                    <a href="" class="btn btn-large btn-link">or a secondary link</a>
+                </div><!-- end well -->
+
+            </div><!-- end col-12 -->
 
         </div> <!-- end bigCallout-->
 
