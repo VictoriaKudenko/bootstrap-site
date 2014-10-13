@@ -81,6 +81,7 @@ body {
 
 .alert {
     margin-top: 20px;
+    display: none;
 }
 
 .well {
