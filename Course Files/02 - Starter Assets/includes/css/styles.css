@@ -13,9 +13,6 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Layout
    -------------------------------------- */
-#featuresHeading {
-    margin-top: 60px;
-}
 
 #features {
     text-align: center;
@@ -96,6 +93,11 @@ body {
 .well {
     margin: 20px 0;
 }
+
+img.pull-left {
+    margin: 0 20px 10px 0;
+}
+
 
 /* --------------------------------------
    Media Queries
