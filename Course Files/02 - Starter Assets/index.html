@@ -297,7 +297,7 @@
                                         <button type="button" class="close" data-dismiss="modal">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                        <h4>This is a Modal Window</h4>
+                                        <h4 class="modal-title">This is a Modal Window</h4>
                                     </div><!-- end modal-header -->
                                     <div class="modal-body">
                                         <h4>Text in a modal</h4>
@@ -307,11 +307,33 @@
                                             similique ut.
                                         </p>
                                         <h4>Popovers in a modal</h4>
-                                        <a href="#" class="btn btn-danger">Don't click this button</a>
+                                        <a href="#" class="btn btn-danger pop">
+                                            Don't click this button</a>
                                         <h4>Tooltips in a modal</h4>
                                         <p><a href="#">This link</a> should have a tooltip, and so should <a href="#">this one</a>!</p>
                                         <hr>
                                         <p><small>P.S. This form doesn't do anything. Just a heads up.</small></p>
+                                        <form class="form-horizontal" role="form">
+                                            <div class="form-group">
+                                                <label for="inputName" class="col-lg-2 control-label">Name</label>
+                                                <div class="col-lg-10">
+                                                    <input id="inputName" type="text" class="form-control" placeholder="Name">
+                                                </div>
+                                            </div><!-- end form-group -->
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="col-lg-2 control-label">Name</label>
+                                                <div class="col-lg-10">
+                                                    <input id="inputEmail" type="email" class="form-control" placeholder="Email">
+                                                </div>
+                                            </div><!-- end form-group -->
+                                            <div class="form-group">
+                                                <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+                                                <div class="col-lg-10">
+                                                    <textarea id="inputMessage" class="form-control" placeholder="Message" rows="3"></textarea>
+                                                    <button type="submit" class="btn btn-success pull-right">Send!</button>
+                                                </div>
+                                            </div><!-- end form-group -->
+                                        </form>
                                     </div><!-- end modal-body -->
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">
