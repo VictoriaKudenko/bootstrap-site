@@ -293,26 +293,43 @@
                         <div class="modal fade" id="myModal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
+
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         <h4 class="modal-title">This is a Modal Window</h4>
                                     </div><!-- end modal-header -->
+
                                     <div class="modal-body">
                                         <h4>Text in a modal</h4>
+
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
                                             dolore doloribus illum laboriosam possimus similique? Ab aut consectetur
                                             doloremque esse ipsum nemo, provident, quasi quidem quis repellendus
                                             similique ut.
                                         </p>
+
                                         <h4>Popovers in a modal</h4>
-                                        <a href="#" class="btn btn-danger pop">
-                                            Don't click this button</a>
+
+                                        <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">
+                                            Don't click this button
+                                        </a>
+
                                         <h4>Tooltips in a modal</h4>
-                                        <p><a href="#">This link</a> should have a tooltip, and so should <a href="#">this one</a>!</p>
+
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip" rel="tooltip">
+                                            This link
+                                        </a>
+                                        should have a tooltip, and so should
+                                        <a href="#" data-toggle="tooltip" data-placement="top" title="Woohoo!" rel="tooltip">
+                                            this one
+                                        </a>!
+
                                         <hr>
-                                        <p><small>P.S. This form doesn't do anything. Just a heads up.</small></p>
+
+                                        <p><small class="text-muted">P.S. This form doesn't do anything. Just a heads up.</small></p>
+
                                         <form class="form-horizontal" role="form">
                                             <div class="form-group">
                                                 <label for="inputName" class="col-lg-2 control-label">Name</label>
@@ -334,7 +351,9 @@
                                                 </div>
                                             </div><!-- end form-group -->
                                         </form>
+
                                     </div><!-- end modal-body -->
+
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">
                                             Close
